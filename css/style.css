@@ -1,0 +1,175 @@
+body {
+  font-family: Arial, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+}
+
+.container {
+  width: 1170px;
+  padding: 0 15px;
+  position: relative;
+}
+
+.header {
+  background: url(/img/banner1.png) no-repeat center/cover;
+  height: 735px;
+  min-width: 320px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+.header .navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #f3f3f3;
+  padding-top: 6px;
+  height: 77px;
+}
+
+.header .navbar .menu {
+  width: 765px;
+}
+
+.header .navbar .menu .contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 30px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  letter-spacing: 0.5px;
+}
+
+.header .navbar .menu .contact span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 40px;
+}
+
+.header .navbar .menu .contact .address img {
+  margin-right: 16px;
+}
+
+.header .navbar .menu .contact .phone {
+  font-family: "Fira Sans", sans-serif;
+}
+
+.header .navbar .menu .contact .icon {
+  margin: 0;
+  width: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header .navbar .menu .navigate {
+  width: 100%;
+  padding: 25px;
+  height: 44px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 18px;
+  color: black;
+  font-weight: bold;
+  background-color: #fbd341;
+  border-radius: 10px;
+}
+
+.header .navbar .menu .navigate ul {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header .blue-background {
+  background: #004c84;
+  opacity: 0.3;
+  width: 72%;
+  height: 407px;
+  z-index: 2;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.header .best-deal {
+  margin-top: 300px;
+  z-index: 3;
+  color: white;
+}
+
+.header .best-deal .slick-slider {
+  z-index: 5;
+}
+
+.header .best-deal .slick-slider h1 {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.header .best-deal .slick-slider .slick-dots {
+  color: black;
+  bottom: -185px;
+  text-align: start;
+}
+
+.header .best-deal .slick-slider .slick-dots button:before {
+  font-size: 60px;
+  color: #cbeef1;
+}
+
+.header .best-deal .slick-slider .slick-dots .slick-active button:before {
+  color: #fbd341;
+}
+
+.header .best-deal .slick-slider .btn {
+  margin-top: 40px;
+  height: 48px;
+  width: 254px;
+  background-color: #fbd341;
+  border-radius: 10px;
+  color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 18px;
+}
+/*# sourceMappingURL=style.css.map */
