@@ -7,3 +7,27 @@ $(".slick-example").slick({
   autoplay: true,
   autoplaySpeed: 5000
 });
+
+$(".slick-section").slick({
+  slidesToShow: 3,
+  lazyload: "ondemand",
+  centerMode: true,
+  centerPadding: "50px",
+  arrows: true,
+  autoplay: true,
+  autoplaySpeed: 5000,
+  responsive: [
+    {
+      breakpoint: 1800,
+      settings: {
+        slidesToShow: 2
+      }
+    },
+    {
+      breakpoint: 1200,
+      settings: {
+        slidesToShow: 1
+      }
+    }
+  ]
+});

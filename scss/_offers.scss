@@ -1,0 +1,104 @@
+.tabs-slick {
+  height: 485px;
+  width: 100%;
+  padding-top: 74px;
+
+  .card {
+    display: flex;
+    background-color: #f8f7f7;
+    width: 520px;
+    flex-direction: row;
+    margin: 0 35px;
+    padding: 10px;
+    border: none;
+    img {
+      margin-right: 28px;
+    }
+    .card-title {
+      display: flex;
+      flex-direction: column;
+
+      h4 {
+        font-family: Arial, sans-serif;
+        font-weight: bold;
+        color: black;
+        font-size: 17px;
+        line-height: 30px;
+      }
+      .date {
+        font-weight: 400;
+        font-size: 14px;
+        margin-bottom: 15px;
+        line-height: 14px;
+        border-bottom: 2px #eae9e9 solid;
+        padding-bottom: 10px;
+      }
+      .info {
+        line-height: 20px;
+        margin-bottom: 20px;
+        letter-spacing: 0.2px;
+      }
+      .price {
+        font-size: 20px;
+        position: relative;
+
+        span {
+          margin-left: 11px;
+          font-size: 11px;
+          color: #898989;
+          position: absolute;
+          top: -11px;
+        }
+        a {
+          display: inline-block;
+          width: 37px;
+          height: 37px;
+          border-radius: 50%;
+          background-color: #fbd341;
+          position: absolute;
+          right: 0;
+          top: 5px;
+          &::before {
+            content: url(../icon/right.png);
+            position: relative;
+            left: 17px;
+            top: 3px;
+          }
+        }
+      }
+    }
+  }
+  .nav-tabs {
+    border: none;
+    .nav-link {
+      border: none;
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 76px;
+    }
+    .active {
+      color: #fbd341;
+    }
+  }
+}
+.tabs-slick .slick-initialized .slick-slide {
+  display: flex;
+  justify-content: center;
+}
+.slick-slide {
+  width: 520px;
+}
+.slick-prev {
+  left: 65px;
+  z-index: 100;
+  &::before {
+    content: url(../icon/left-arrow.png);
+  }
+}
+.slick-next {
+  right: 65px;
+  z-index: 100;
+  &::before {
+    content: url(../icon/rigth-arrow.png);
+  }
+}

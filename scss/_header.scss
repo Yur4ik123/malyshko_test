@@ -1,0 +1,120 @@
+.header {
+  background: url(../img/banner1.png) no-repeat center / cover;
+  height: 735px;
+  min-width: 320px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    color: #f3f3f3;
+    padding-top: 6px;
+    height: 77px;
+    .menu {
+      width: 765px;
+
+      .contact {
+        display: flex;
+        align-items: center;
+        height: 30px;
+        justify-content: space-between;
+        justify-content: flex-end;
+        letter-spacing: 0.5px;
+        margin-bottom: 16px;
+
+        span {
+          display: flex;
+          align-items: center;
+          margin-right: 40px;
+        }
+        .address {
+          img {
+            margin-right: 16px;
+          }
+        }
+        .phone {
+          font-family: "Fira Sans", sans-serif;
+        }
+        .icon {
+          margin: 0;
+          width: 70px;
+          display: flex;
+          justify-content: space-between;
+        }
+      }
+      .navigate {
+        width: 100%;
+        padding: 25px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        font-size: 18px;
+        color: black;
+        font-weight: bold;
+        background-color: #fbd341;
+        border-radius: 10px;
+        ul {
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+        }
+      }
+    }
+  }
+  .blue-background {
+    background: #004c84;
+    opacity: 0.3;
+    width: 72%;
+    height: 407px;
+    z-index: 2;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+  .best-deal {
+    margin-top: 300px;
+    z-index: 3;
+    color: white;
+    .slick-slider {
+      z-index: 5;
+      h1 {
+        font-size: 30px;
+        font-weight: bold;
+      }
+      .slick-dots {
+        color: black;
+        bottom: -185px;
+        text-align: start;
+        button {
+          &:before {
+            font-size: 60px;
+            color: #cbeef1;
+          }
+        }
+        .slick-active {
+          button {
+            &:before {
+              color: #fbd341;
+            }
+          }
+        }
+      }
+      .btn {
+        margin-top: 40px;
+        height: 48px;
+        width: 254px;
+        background-color: #fbd341;
+        border-radius: 10px;
+        color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 18px;
+      }
+    }
+  }
+}
+.slick-initialized .slick-slide {
+  display: block;
+}
