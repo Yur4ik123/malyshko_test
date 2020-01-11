@@ -302,6 +302,7 @@
 
 .advantages {
   background-color: #f8f7f7;
+  height: 513px;
 }
 
 .advantages .advantages-wrapper {
@@ -354,6 +355,91 @@
   height: 8px;
   border-radius: 100%;
   background-color: #fbd341;
+}
+
+.tour-offer {
+  height: 280px;
+  width: 100%;
+  background: url(../img/footer.png) no-repeat center/cover;
+  padding-top: 50px;
+}
+
+.tour-offer h1 {
+  color: white;
+  font-weight: bold;
+  line-height: 30px;
+  font-size: 24px;
+  margin-bottom: 38px;
+}
+
+.tour-offer .input-data {
+  height: 130px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 40px;
+}
+
+.tour-offer .input-data .btn {
+  height: 48px;
+  width: 254px;
+  background-color: #fbd341;
+  border-radius: 10px;
+  color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 18px;
+}
+
+.tour-offer .input-data input {
+  width: 140px;
+  border: none;
+  border-bottom: 1px #6b727c solid;
+  background-color: transparent;
+  color: white;
+  font-size: 18px;
+  padding-left: 14px;
+}
+
+.tour-offer .input-data .dropdown-tour-offer {
+  width: 140px;
+  color: white;
+  font-size: 18px;
+  border-bottom: 1px #6b727c solid;
+  padding-left: 14px;
+}
+
+.tour-offer .input-data .dropdown-tour-offer .dropdown-toggle {
+  position: relative;
+}
+
+.tour-offer .input-data .dropdown-tour-offer .dropdown-toggle::after {
+  position: absolute;
+  top: 5px;
+  right: -40px;
+  border: none;
+  width: 9px;
+  height: 9px;
+  border-right: 1px solid white;
+  border-bottom: 1px solid white;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  vertical-align: 2px;
 }
 
 body {
