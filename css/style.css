@@ -300,6 +300,62 @@
   content: url(../icon/rigth-arrow.png);
 }
 
+.advantages {
+  background-color: #f8f7f7;
+}
+
+.advantages .advantages-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.advantages .advantages-wrapper h1 {
+  margin-top: 45px;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  margin-bottom: 60px;
+  width: 100%;
+}
+
+.advantages .advantages-wrapper .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.advantages .advantages-wrapper .title img {
+  width: 458px;
+  height: 315px;
+  margin-right: 91px;
+}
+
+.advantages .advantages-wrapper .title span {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  position: relative;
+  padding-right: 20px;
+}
+
+.advantages .advantages-wrapper .title span::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  content: " ";
+  color: #fbd341;
+  width: 8px;
+  height: 8px;
+  border-radius: 100%;
+  background-color: #fbd341;
+}
+
 body {
   font-family: Arial, sans-serif;
   font-weight: 400;
