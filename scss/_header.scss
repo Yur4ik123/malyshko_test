@@ -58,6 +58,63 @@
           width: 100%;
           display: flex;
           justify-content: space-between;
+          .tour-dropdown {
+            .dropdown-toggle {
+              &:after {
+                content: "";
+                border: none;
+              }
+            }
+            .dropdown-menu {
+              background-color: rgba($color: #3397e2, $alpha: 0.8);
+              left: 450px;
+              top: 100px;
+              border-radius: 0;
+              border: none;
+              width: 195px;
+              a {
+                font-size: 14px;
+                line-height: 20px;
+                color: white;
+                &:hover {
+                  background-color: #3397e2;
+                }
+              }
+              .dropdown-item {
+                white-space: pre-wrap;
+                padding: 7px 34px 7px 25px;
+              }
+            }
+          }
+          .cervices-dropdown {
+            .dropdown-toggle {
+              &:after {
+                content: "";
+                border: none;
+              }
+            }
+            .dropdown-menu {
+              background-color: rgba($color: #3397e2, $alpha: 0.8);
+              left: 680px;
+              top: 100px;
+              border-radius: 0;
+              border: none;
+              width: 240px;
+              a {
+                font-size: 14px;
+                line-height: 20px;
+                color: white;
+
+                &:hover {
+                  background-color: #3397e2;
+                }
+              }
+              .dropdown-item {
+                white-space: pre-wrap;
+                padding: 7px 34px 7px 25px;
+              }
+            }
+          }
         }
       }
     }
