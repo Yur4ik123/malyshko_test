@@ -14,3 +14,8 @@ body {
   padding: 0 15px;
   position: relative;
 }
+a {
+  &:hover {
+    color: #fbd341;
+  }
+}

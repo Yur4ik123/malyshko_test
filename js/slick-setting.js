@@ -12,7 +12,7 @@ $(".slick-section").slick({
   slidesToShow: 3,
   lazyload: "ondemand",
   centerMode: true,
-  centerPadding: "50px",
+  centerPadding: "10px",
   arrows: true,
   autoplay: true,
   autoplaySpeed: 5000,

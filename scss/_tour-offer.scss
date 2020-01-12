@@ -44,7 +44,22 @@
       font-size: 18px;
       border-bottom: 1px #6b727c solid;
       padding-left: 14px;
+      .dropdown-menu {
+        border-radius: 0;
+        border: none;
+        width: 180px;
+        top: 4px;
+        left: -15px;
 
+        a {
+          font-size: 16px;
+          line-height: 27px;
+          color: black;
+          &:hover {
+            color: #fbd341;
+          }
+        }
+      }
       .dropdown-toggle {
         position: relative;
         &::after {
@@ -60,16 +75,37 @@
           vertical-align: 2px;
         }
       }
-      .dropdown-menu {
-        border-radius: 0;
-        border: none;
-        width: 180px;
-        a {
-          font-size: 16px;
-          line-height: 27px;
-          color: black;
-        }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .tour-offer h1 .input-data input {
+    width: 110px;
+  }
+}
+@media (max-width: 992px) {
+  .tour-offer {
+    .input-data {
+      height: 140px;
+      flex-wrap: wrap;
+      .btn {
+        width: 100%;
       }
+    }
+
+    h1 {
+      margin-bottom: 25px;
+    }
+  }
+}
+@media (max-width: 500px) {
+  .tour-offer {
+    height: 350px;
+    padding-top: 20px;
+    .input-data {
+      height: 220px;
+      margin-bottom: 20px;
     }
   }
 }

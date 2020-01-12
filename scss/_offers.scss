@@ -102,3 +102,27 @@
     content: url(../icon/rigth-arrow.png);
   }
 }
+@media (max-width: 500px) {
+  .tabs-slick {
+    padding-top: 20px;
+    height: auto;
+    .slick-prev {
+      left: 10px;
+    }
+    .slick-next {
+      right: 5px;
+    }
+    .nav-tabs .nav-link {
+      margin-bottom: 20px;
+    }
+    .card {
+      flex-direction: column;
+      width: 100%;
+      margin: 0px 7px;
+      padding: 0 40px;
+      img {
+        margin: 0;
+      }
+    }
+  }
+}

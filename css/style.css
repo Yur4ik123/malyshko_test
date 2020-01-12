@@ -23,6 +23,10 @@
   height: 77px;
 }
 
+.header .navbar .navbar-mobile {
+  display: none;
+}
+
 .header .navbar .menu {
   width: 765px;
 }
@@ -89,6 +93,10 @@
   font-weight: bold;
   background-color: #fbd341;
   border-radius: 10px;
+}
+
+.header .navbar .menu .navigate a:hover {
+  color: #004c84;
 }
 
 .header .navbar .menu .navigate ul {
@@ -221,6 +229,132 @@
 
 .slick-initialized .slick-slide {
   display: block;
+}
+
+@media (max-width: 992px) {
+  .header {
+    height: 550px;
+  }
+  .header .best-deal {
+    margin-top: 100px;
+  }
+  .header .blue-background {
+    width: 100%;
+  }
+  .header .navbar .menu {
+    width: 80%;
+  }
+  .header .navbar .menu .navigate {
+    font-size: 15px;
+  }
+  .header .navbar .menu .navigate ul .tour-dropdown .dropdown-menu {
+    left: 150px;
+    top: 85px;
+  }
+  .header .navbar .menu .navigate .navigate ul .cervices-dropdown .dropdown-menu {
+    left: 320px;
+    top: 85px;
+  }
+  .header .navbar .menu .contact {
+    font-size: 12px;
+    letter-spacing: 0;
+    margin-bottom: 0px;
+  }
+  .header .navbar .menu .contact span {
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: 767px) {
+  .container,
+  .container-sm {
+    max-width: 100%;
+  }
+  .header {
+    height: 450px;
+  }
+  .header .blue-background {
+    display: none;
+  }
+  .header .container {
+    width: 100%;
+    padding: 0 0;
+  }
+  .header .container .best-deal {
+    margin-top: 20px;
+    padding: 0 15px;
+  }
+  .header .container .best-deal .slick-slider .slick-dots {
+    color: black;
+    bottom: -70px;
+    text-align: center;
+  }
+  .header .container .navbar {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    padding: 0;
+    height: auto;
+  }
+  .header .container .navbar .menu {
+    width: 100%;
+  }
+  .header .container .navbar .menu .navbar-mobile {
+    display: block;
+  }
+  .header .container .navbar .menu .navbar-mobile .navbar-toggler-mobile {
+    width: 100%;
+    background-color: #fbd341;
+    font-weight: bold;
+    font-size: 17px;
+  }
+  .header .container .navbar .menu .navbar-mobile .navbar-collapse {
+    background-color: #fbd341;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+  }
+  .header .container .navbar .menu .navbar-mobile .navbar-collapse a {
+    padding: 0;
+    cursor: pointer;
+  }
+  .header .container .navbar .navigate {
+    font-size: 15px;
+    display: none;
+  }
+  .header .container .navbar .navigate ul .tour-dropdown .dropdown-menu {
+    left: 150px;
+    top: 85px;
+  }
+  .header .container .navbar .navigate .navigate ul .cervices-dropdown .dropdown-menu {
+    left: 320px;
+    top: 85px;
+  }
+  .header .container .navbar .contact {
+    font-size: 12px;
+    letter-spacing: 0;
+    margin-bottom: 0px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .header .container .navbar .contact span {
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: 500px) {
+  .header .container .navbar .menu {
+    margin-top: 10px;
+  }
+  .header .container .navbar .contact {
+    display: none;
+  }
 }
 
 .tabs-slick {
@@ -358,6 +492,34 @@
   content: url(../icon/rigth-arrow.png);
 }
 
+@media (max-width: 500px) {
+  .tabs-slick {
+    padding-top: 20px;
+    height: auto;
+  }
+  .tabs-slick .slick-prev {
+    left: 10px;
+  }
+  .tabs-slick .slick-next {
+    right: 5px;
+  }
+  .tabs-slick .nav-tabs .nav-link {
+    margin-bottom: 20px;
+  }
+  .tabs-slick .card {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    margin: 0px 7px;
+    padding: 0 40px;
+  }
+  .tabs-slick .card img {
+    margin: 0;
+  }
+}
+
 .advantages {
   background-color: #f8f7f7;
   height: 513px;
@@ -413,6 +575,47 @@
   height: 8px;
   border-radius: 100%;
   background-color: #fbd341;
+}
+
+@media (max-width: 992px) {
+  .advantages .advantages-wrapper .title img {
+    width: 315px;
+    height: 300px;
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: 767px) {
+  .advantages .advantages-wrapper .title {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .advantages .advantages-wrapper .title span {
+    width: 90%;
+    padding-right: 0;
+  }
+  .advantages .advantages-wrapper .title span:before {
+    display: none;
+  }
+  .advantages .advantages-wrapper .title img {
+    width: 500px;
+    height: 200px;
+    margin-bottom: 10px;
+    margin-right: 0;
+  }
+  .advantages .advantages-wrapper h1 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  .advantages {
+    margin-bottom: 10px;
+    height: auto;
+  }
 }
 
 .tour-offer {
@@ -482,6 +685,24 @@
   padding-left: 14px;
 }
 
+.tour-offer .input-data .dropdown-tour-offer .dropdown-menu {
+  border-radius: 0;
+  border: none;
+  width: 180px;
+  top: 4px;
+  left: -15px;
+}
+
+.tour-offer .input-data .dropdown-tour-offer .dropdown-menu a {
+  font-size: 16px;
+  line-height: 27px;
+  color: black;
+}
+
+.tour-offer .input-data .dropdown-tour-offer .dropdown-menu a:hover {
+  color: #fbd341;
+}
+
 .tour-offer .input-data .dropdown-tour-offer .dropdown-toggle {
   position: relative;
 }
@@ -500,16 +721,35 @@
   vertical-align: 2px;
 }
 
-.tour-offer .input-data .dropdown-tour-offer .dropdown-menu {
-  border-radius: 0;
-  border: none;
-  width: 180px;
+@media (max-width: 1200px) {
+  .tour-offer h1 .input-data input {
+    width: 110px;
+  }
 }
 
-.tour-offer .input-data .dropdown-tour-offer .dropdown-menu a {
-  font-size: 16px;
-  line-height: 27px;
-  color: black;
+@media (max-width: 992px) {
+  .tour-offer .input-data {
+    height: 140px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .tour-offer .input-data .btn {
+    width: 100%;
+  }
+  .tour-offer h1 {
+    margin-bottom: 25px;
+  }
+}
+
+@media (max-width: 500px) {
+  .tour-offer {
+    height: 350px;
+    padding-top: 20px;
+  }
+  .tour-offer .input-data {
+    height: 220px;
+    margin-bottom: 20px;
+  }
 }
 
 .about-us {
@@ -652,6 +892,80 @@
   margin-right: 20px;
 }
 
+@media (max-width: 992px) {
+  .about-us .container .about {
+    margin-top: 30px;
+  }
+  .about-us .container .about .img-label {
+    width: 190px;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+  }
+  .about-us .container .about .info {
+    width: 220px;
+  }
+  .about-us .container .about .creator span {
+    width: 190px;
+  }
+  .about-us .container .contact-wrapper div {
+    margin-right: 25px;
+  }
+  .about-us .container .contact-wrapper .about-contact {
+    width: 180px;
+    margin-right: 0;
+  }
+  .about-us .container .contact-wrapper .about-contact .phone {
+    padding-bottom: 0px;
+    margin-bottom: 5px;
+  }
+}
+
+@media (max-width: 767px) {
+  .about-us .container .contact-wrapper .nav,
+  .about-us .container .contact-wrapper .support,
+  .about-us .container .contact-wrapper .about-contact {
+    margin-top: 32px;
+    line-height: 20px;
+  }
+  .about-us .container .contact-wrapper .about-contact {
+    width: auto;
+  }
+}
+
+@media (max-width: 500px) {
+  .about-us {
+    height: auto;
+  }
+  .about-us .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .about-us .container .about {
+    width: 100%;
+  }
+  .about-us .container .about .info {
+    width: 100%;
+  }
+  .about-us .container .about .img-label {
+    width: 100%;
+  }
+  .about-us .container .about .img-label img {
+    margin: auto;
+  }
+  .about-us .container .about .creator span {
+    width: 100%;
+  }
+  .about-us .container .contact-wrapper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 100%;
+    padding: 0px 43px;
+    margin-bottom: 20px;
+  }
+}
+
 body {
   font-family: Arial, sans-serif;
   font-weight: 400;
@@ -663,5 +977,9 @@ body {
   width: 1170px;
   padding: 0 15px;
   position: relative;
+}
+
+a:hover {
+  color: #fbd341;
 }
 /*# sourceMappingURL=style.css.map */
