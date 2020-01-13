@@ -33,7 +33,7 @@ a:active {
 button {
   border-width: 0;
   border-style: none;
-  border-color: none;
+  border-color: transparent;
 }
 
 ul {
