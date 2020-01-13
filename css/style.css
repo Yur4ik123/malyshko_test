@@ -677,40 +677,38 @@
   padding-left: 14px;
 }
 
-.tour-offer .input-data .dropdown-tour-offer {
-  width: 140px;
+.tour-offer .input-data .tour-select {
   color: white;
   font-size: 18px;
   border-bottom: 1px #6b727c solid;
+  background-color: transparent;
+  width: 140px;
   padding-left: 14px;
-}
-
-.tour-offer .input-data .dropdown-tour-offer .dropdown-menu {
-  border-radius: 0;
-  border: none;
-  width: 180px;
-  top: 4px;
-  left: -15px;
-}
-
-.tour-offer .input-data .dropdown-tour-offer .dropdown-menu a {
-  font-size: 16px;
-  line-height: 27px;
-  color: black;
-}
-
-.tour-offer .input-data .dropdown-tour-offer .dropdown-menu a:hover {
-  color: #fbd341;
-}
-
-.tour-offer .input-data .dropdown-tour-offer .dropdown-toggle {
+  cursor: pointer;
   position: relative;
 }
 
-.tour-offer .input-data .dropdown-tour-offer .dropdown-toggle::after {
+.tour-offer .input-data .tour-select fieldset .nice-select {
+  background-color: transparent;
+  border-radius: 5px;
+  border: none;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: normal;
+  height: auto;
+  line-height: 30px;
+  outline: none;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.tour-offer .input-data .tour-select fieldset .nice-select:after {
+  display: block;
+  z-index: 100;
+  content: "";
   position: absolute;
-  top: 5px;
-  right: -40px;
+  top: 14px;
+  right: -18px;
   border: none;
   width: 9px;
   height: 9px;
@@ -718,7 +716,31 @@
   border-bottom: 1px solid white;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
-  vertical-align: 2px;
+}
+
+.tour-offer .input-data .tour-select fieldset .nice-select span {
+  font-size: 18px;
+}
+
+.tour-offer .input-data .tour-select fieldset .nice-select .list {
+  color: black;
+  border: none;
+  border-radius: 0;
+  font-size: 18px;
+  line-height: 30px;
+  padding: 15px;
+  position: absolute;
+  top: 27px;
+  left: -15px;
+}
+
+.tour-offer .input-data .tour-select fieldset .nice-select .list li {
+  background-color: transparent;
+}
+
+.tour-offer .input-data .tour-select fieldset .nice-select .list li:hover {
+  color: #fbd341;
+  background-color: transparent;
 }
 
 @media (max-width: 1200px) {
