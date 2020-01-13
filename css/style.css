@@ -964,6 +964,12 @@
     padding: 0px 43px;
     margin-bottom: 20px;
   }
+  .about-us .container .contact-wrapper .about-contact {
+    line-height: 30px;
+  }
+  .about-us .container .contact-wrapper .about-contact h3 {
+    margin-bottom: 20px;
+  }
 }
 
 body {
