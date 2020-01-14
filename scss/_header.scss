@@ -319,12 +319,20 @@
           width: 100%;
           .navbar-mobile {
             display: block;
+
             .navbar-toggler-mobile {
               width: 100%;
               background-color: #fbd341;
               font-weight: bold;
               font-size: 17px;
             }
+            .navbar-toggler-tour {
+              font-size: 14px;
+              img {
+                width: 2%;
+              }
+            }
+
             .navbar-collapse {
               background-color: #fbd341;
               text-align: center;
@@ -334,6 +342,13 @@
                 padding: 0;
                 cursor: pointer;
               }
+            }
+            .collapse-drop-mobile {
+              width: 100%;
+              height: 150px;
+              overflow: auto;
+              background-color: #22334d;
+              color: white;
             }
           }
         }

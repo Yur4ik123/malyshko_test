@@ -375,6 +375,12 @@
     font-weight: bold;
     font-size: 17px;
   }
+  .header .container .navbar .menu .navbar-mobile .navbar-toggler-tour {
+    font-size: 14px;
+  }
+  .header .container .navbar .menu .navbar-mobile .navbar-toggler-tour img {
+    width: 2%;
+  }
   .header .container .navbar .menu .navbar-mobile .navbar-collapse {
     background-color: #fbd341;
     text-align: center;
@@ -384,6 +390,13 @@
   .header .container .navbar .menu .navbar-mobile .navbar-collapse a {
     padding: 0;
     cursor: pointer;
+  }
+  .header .container .navbar .menu .navbar-mobile .collapse-drop-mobile {
+    width: 100%;
+    height: 150px;
+    overflow: auto;
+    background-color: #22334d;
+    color: white;
   }
   .header .container .navbar .navigate {
     font-size: 15px;
