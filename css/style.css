@@ -411,6 +411,7 @@
   display: flex;
   background-color: #f8f7f7;
   width: 520px;
+  min-width: 350px;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
