@@ -167,24 +167,12 @@
   padding: 7px 34px 7px 25px;
 }
 
-.header .blue-background {
-  background: #004c84;
-  opacity: 0.3;
-  width: 72%;
-  height: 228px;
-  z-index: 3;
-  position: absolute;
-  left: 0;
-  bottom: 180px;
-}
-
 .header .best-deal {
   z-index: 3;
   color: white;
   width: 100%;
   position: absolute;
   top: 0;
-  height: 735px;
 }
 
 .header .best-deal .slick-slide {
@@ -196,10 +184,24 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
+}
+
+.header .best-deal .slick-slide .best-deal-slider .blue-background {
+  display: block;
+  background: #004c84;
+  opacity: 0.3;
+  width: 72%;
+  height: 228px;
+  z-index: 1;
+  position: absolute;
+  left: 0;
+  bottom: 180px;
 }
 
 .header .best-deal .slick-slide .best-deal-slider .container {
   margin-top: 394px;
+  z-index: 5;
 }
 
 .header .best-deal .slick-slide .best-deal-slider .container h1 {
@@ -230,7 +232,7 @@
   color: black;
   bottom: 27px;
   text-align: center;
-  left: -499px;
+  left: -34%;
   z-index: 5;
 }
 
@@ -243,17 +245,6 @@
   color: #fbd341;
 }
 
-.header .best-deal .blue-background {
-  background: #004c84;
-  opacity: 0.3;
-  width: 72%;
-  height: 228px;
-  z-index: 3;
-  position: absolute;
-  left: 0;
-  bottom: 180px;
-}
-
 .slick-initialized .slick-slide {
   display: block;
 }
@@ -262,10 +253,13 @@
   .header {
     height: 550px;
   }
-  .header .best-deal {
-    margin-top: 100px;
+  .header .best-deal .slick-slide .best-deal-slider {
+    height: 500px;
   }
-  .header .blue-background {
+  .header .best-deal .slick-slide .best-deal-slider .container {
+    margin-top: 120px;
+  }
+  .header .best-deal .slick-slide .best-deal-slider .blue-background {
     width: 100%;
   }
   .header .navbar .menu {
@@ -298,10 +292,16 @@
     max-width: 100%;
   }
   .header {
-    height: 450px;
+    height: 460px;
   }
-  .header .blue-background {
-    display: none;
+  .header .best-deal .slick-slide .best-deal-slider {
+    padding: 0 20px;
+  }
+  .header .best-deal .slick-slide .best-deal-slider .container {
+    margin-top: 220px;
+  }
+  .header .best-deal .slick-slide .best-deal-slider .blue-background {
+    bottom: 65px;
   }
   .header .container {
     width: 100%;
@@ -376,11 +376,26 @@
 }
 
 @media (max-width: 500px) {
+  .header {
+    height: 500px;
+  }
+  .header .best-deal .header .best-deal .slick-slide .container {
+    margin-top: 160px;
+  }
+  .header .best-deal .slick-dots {
+    left: 0;
+  }
   .header .container .navbar .menu {
     margin-top: 10px;
   }
   .header .container .navbar .contact {
     display: none;
+  }
+  .header .best-deal .slick-slide .best-deal-slider .blue-background {
+    bottom: 135px;
+  }
+  .header .best-deal .slick-slide .best-deal-slider .container {
+    margin-top: 160px;
   }
 }
 

@@ -127,30 +127,34 @@
       }
     }
   }
-  .blue-background {
-    background: #004c84;
-    opacity: 0.3;
-    width: 72%;
-    height: 228px;
-    z-index: 3;
-    position: absolute;
-    left: 0;
-    bottom: 180px;
-  }
+
   .best-deal {
     z-index: 3;
     color: white;
     width: 100%;
     position: absolute;
     top: 0;
-    height: 735px;
+
     .slick-slide {
       z-index: 5;
       .best-deal-slider {
         height: 735px;
         display: flex;
+        position: relative;
+        .blue-background {
+          display: block;
+          background: #004c84;
+          opacity: 0.3;
+          width: 72%;
+          height: 228px;
+          z-index: 1;
+          position: absolute;
+          left: 0;
+          bottom: 180px;
+        }
         .container {
           margin-top: 394px;
+          z-index: 5;
           h1 {
             font-size: 30px;
             font-weight: bold;
@@ -175,7 +179,7 @@
       color: black;
       bottom: 27px;
       text-align: center;
-      left: -499px;
+      left: -34%;
       z-index: 5;
       button {
         &:before {
@@ -191,16 +195,6 @@
         }
       }
     }
-    .blue-background {
-      background: #004c84;
-      opacity: 0.3;
-      width: 72%;
-      height: 228px;
-      z-index: 3;
-      position: absolute;
-      left: 0;
-      bottom: 180px;
-    }
   }
 }
 .slick-initialized .slick-slide {
@@ -212,11 +206,17 @@
     height: 550px;
 
     .best-deal {
-      margin-top: 100px;
+      .slick-slide .best-deal-slider {
+        height: 500px;
+        .container {
+          margin-top: 120px;
+        }
+        .blue-background {
+          width: 100%;
+        }
+      }
     }
-    .blue-background {
-      width: 100%;
-    }
+
     .navbar .menu {
       width: 80%;
       .navigate {
@@ -247,10 +247,17 @@
     max-width: 100%;
   }
   .header {
-    height: 450px;
-    .blue-background {
-      display: none;
+    height: 460px;
+    .best-deal .slick-slide .best-deal-slider {
+      padding: 0 20px;
+      .container {
+        margin-top: 220px;
+      }
+      .blue-background {
+        bottom: 65px;
+      }
     }
+
     .container {
       width: 100%;
       padding: 0 0;
@@ -320,14 +327,33 @@
   }
 }
 @media (max-width: 500px) {
-  .header .container {
-    .navbar {
-      .menu {
-        margin-top: 10px;
+  .header {
+    height: 500px;
+    .best-deal {
+      .header .best-deal .slick-slide .container {
+        margin-top: 160px;
       }
-      .contact {
-        display: none;
+      .slick-dots {
+        left: 0;
       }
+    }
+    .container {
+      .navbar {
+        .menu {
+          margin-top: 10px;
+        }
+        .contact {
+          display: none;
+        }
+      }
+    }
+  }
+  .header .best-deal .slick-slide .best-deal-slider {
+    .blue-background {
+      bottom: 135px;
+    }
+    .container {
+      margin-top: 160px;
     }
   }
 }
