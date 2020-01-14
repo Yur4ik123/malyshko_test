@@ -347,12 +347,10 @@
             }
             .collapse-drop-mobile {
               width: 100%;
-              height: 150px;
-
-              overflow-y: scroll;
-              transition: none;
+              max-height: 150px;
               background-color: #22334d;
               color: white;
+              overflow-y: scroll;
             }
           }
         }
