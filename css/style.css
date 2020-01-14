@@ -121,7 +121,9 @@
   border-radius: 0;
   border: none;
   width: 195px;
-  overflow: auto;
+  overflow-y: scroll;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
   height: 253px;
 }
 
@@ -152,6 +154,8 @@
   border-radius: 0;
   border: none;
   overflow: auto;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
   width: 240px;
   height: 253px;
 }
@@ -394,7 +398,9 @@
   .header .container .navbar .menu .navbar-mobile .collapse-drop-mobile {
     width: 100%;
     height: 150px;
-    overflow: auto;
+    overflow-y: scroll;
+    -webkit-transition: none;
+    transition: none;
     background-color: #22334d;
     color: white;
   }

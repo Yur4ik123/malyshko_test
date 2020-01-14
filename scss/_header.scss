@@ -80,7 +80,8 @@
               border-radius: 0;
               border: none;
               width: 195px;
-              overflow: auto;
+              overflow-y: scroll;
+              transition: 0.5s;
               height: 253px;
               a {
                 font-size: 14px;
@@ -110,6 +111,7 @@
               border-radius: 0;
               border: none;
               overflow: auto;
+              transition: 0.5s;
               width: 240px;
               height: 253px;
 
@@ -346,7 +348,9 @@
             .collapse-drop-mobile {
               width: 100%;
               height: 150px;
-              overflow: auto;
+
+              overflow-y: scroll;
+              transition: none;
               background-color: #22334d;
               color: white;
             }
