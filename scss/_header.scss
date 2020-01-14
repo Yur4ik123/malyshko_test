@@ -1,5 +1,4 @@
 .header {
-  background: url(../img/banner1.png) no-repeat center / cover;
   height: 735px;
   min-width: 320px;
   display: flex;
@@ -11,6 +10,7 @@
     color: #f3f3f3;
     padding-top: 6px;
     height: 77px;
+    z-index: 5;
     .navbar-mobile {
       display: none;
     }
@@ -131,52 +131,75 @@
     background: #004c84;
     opacity: 0.3;
     width: 72%;
-    height: 407px;
-    z-index: 2;
+    height: 228px;
+    z-index: 3;
     position: absolute;
     left: 0;
-    bottom: 0;
+    bottom: 180px;
   }
   .best-deal {
-    margin-top: 300px;
     z-index: 3;
     color: white;
-    .slick-slider {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    height: 735px;
+    .slick-slide {
       z-index: 5;
-      h1 {
-        font-size: 30px;
-        font-weight: bold;
+      .best-deal-slider {
+        height: 735px;
+        display: flex;
+        .container {
+          margin-top: 394px;
+          h1 {
+            font-size: 30px;
+            font-weight: bold;
+          }
+
+          .btn {
+            margin-top: 40px;
+            height: 48px;
+            width: 254px;
+            background-color: #fbd341;
+            border-radius: 10px;
+            color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 18px;
+          }
+        }
       }
-      .slick-dots {
-        color: black;
-        bottom: -185px;
-        text-align: start;
+    }
+    .slick-dots {
+      color: black;
+      bottom: 27px;
+      text-align: center;
+      left: -499px;
+      z-index: 5;
+      button {
+        &:before {
+          font-size: 60px;
+          color: #cbeef1;
+        }
+      }
+      .slick-active {
         button {
           &:before {
-            font-size: 60px;
-            color: #cbeef1;
-          }
-        }
-        .slick-active {
-          button {
-            &:before {
-              color: #fbd341;
-            }
+            color: #fbd341;
           }
         }
       }
-      .btn {
-        margin-top: 40px;
-        height: 48px;
-        width: 254px;
-        background-color: #fbd341;
-        border-radius: 10px;
-        color: black;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 18px;
-      }
+    }
+    .blue-background {
+      background: #004c84;
+      opacity: 0.3;
+      width: 72%;
+      height: 228px;
+      z-index: 3;
+      position: absolute;
+      left: 0;
+      bottom: 180px;
     }
   }
 }

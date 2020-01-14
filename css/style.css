@@ -1,5 +1,4 @@
 .header {
-  background: url(../img/banner1.png) no-repeat center/cover;
   height: 735px;
   min-width: 320px;
   display: -webkit-box;
@@ -21,6 +20,7 @@
   color: #f3f3f3;
   padding-top: 6px;
   height: 77px;
+  z-index: 5;
 }
 
 .header .navbar .navbar-mobile {
@@ -171,44 +171,43 @@
   background: #004c84;
   opacity: 0.3;
   width: 72%;
-  height: 407px;
-  z-index: 2;
+  height: 228px;
+  z-index: 3;
   position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: 180px;
 }
 
 .header .best-deal {
-  margin-top: 300px;
   z-index: 3;
   color: white;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  height: 735px;
 }
 
-.header .best-deal .slick-slider {
+.header .best-deal .slick-slide {
   z-index: 5;
 }
 
-.header .best-deal .slick-slider h1 {
+.header .best-deal .slick-slide .best-deal-slider {
+  height: 735px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header .best-deal .slick-slide .best-deal-slider .container {
+  margin-top: 394px;
+}
+
+.header .best-deal .slick-slide .best-deal-slider .container h1 {
   font-size: 30px;
   font-weight: bold;
 }
 
-.header .best-deal .slick-slider .slick-dots {
-  color: black;
-  bottom: -185px;
-  text-align: start;
-}
-
-.header .best-deal .slick-slider .slick-dots button:before {
-  font-size: 60px;
-  color: #cbeef1;
-}
-
-.header .best-deal .slick-slider .slick-dots .slick-active button:before {
-  color: #fbd341;
-}
-
-.header .best-deal .slick-slider .btn {
+.header .best-deal .slick-slide .best-deal-slider .container .btn {
   margin-top: 40px;
   height: 48px;
   width: 254px;
@@ -225,6 +224,34 @@
       -ms-flex-align: center;
           align-items: center;
   font-size: 18px;
+}
+
+.header .best-deal .slick-dots {
+  color: black;
+  bottom: 27px;
+  text-align: center;
+  left: -499px;
+  z-index: 5;
+}
+
+.header .best-deal .slick-dots button:before {
+  font-size: 60px;
+  color: #cbeef1;
+}
+
+.header .best-deal .slick-dots .slick-active button:before {
+  color: #fbd341;
+}
+
+.header .best-deal .blue-background {
+  background: #004c84;
+  opacity: 0.3;
+  width: 72%;
+  height: 228px;
+  z-index: 3;
+  position: absolute;
+  left: 0;
+  bottom: 180px;
 }
 
 .slick-initialized .slick-slide {
